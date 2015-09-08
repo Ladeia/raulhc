@@ -11,3 +11,12 @@ Temos como prioridade estratégica a manutenção de um hackerspace em Salvador/
 -----------------------
 
 https://play.google.com/store/apps/details?id=br.com.devibe.raulhc
+
+
+##Especificações
+-----------------------
+
+Esse app foi feito utilizando Ionic Framework. Nosso objetivo é divulgar o Raul Hacker Club.
+Estejam a vontade para contribuir com o projeto ou até criar um outro em plataforma nativa, ficaremos felizes em colocar na loja!
+
+Toca Raul!
