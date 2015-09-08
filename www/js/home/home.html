@@ -1,0 +1,19 @@
+<ion-view view-title="Agenda">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="evento in HomeController.data.eventos">
+                <h2>{{evento.title}} [{{evento.tipoDeAtividade}} - {{evento.tipoDeReuniao}}]</h2>
+                <div ng-if="!evento.dataFim">
+                    <h3>Data: {{evento.dataIni | date }}<span ng-if="evento.horaIni"> às {{evento.horaIni}}</span></h3>
+                </div>
+                <div ng-if="evento.dataFim">
+                    <h3>Ínicio: {{evento.dataIni | date }}<span ng-if="evento.horaIni"> às {{evento.horaIni}}</span></h3>
+                    <h3>Termino: {{evento.dataFim | date }}<span ng-if="evento.horaFim"> às {{evento.horaFim}}</span></h3>
+                </div>
+                <p ng-if="evento.custo!=='00,00'">{{evento.vagas}} vagas / Entrada: <strong>R$ {{ evento.custo }}</strong> [{{evento.entrada}}]</p>
+                <p ng-if="evento.custo==='00,00'">{{evento.vagas}} vagas / <strong>{{evento.entrada}}</strong></p>
+                <p>{{evento.local}} - {{evento.endereco}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
